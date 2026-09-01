@@ -22,3 +22,13 @@ nav{margin-top:14px;padding-top:10px;border-top:1px solid #173047}.nav{display:f
 .row-drill-hint{display:block;color:#4baaf3!important;font-size:7px!important;margin-top:3px!important;opacity:.8}
 .unit-table-card .panel-caption{color:#4faef5;font-weight:800}
 .status-card{transition:border-color .15s ease,transform .15s ease}.status-card:hover{border-color:#2e668d}.panel-link{font-size:10px}
+
+/* v12.5 metric exception drill-down */
+.metric-filter-card{appearance:none;width:100%;text-align:left;font:inherit;color:inherit;cursor:pointer;position:relative;transition:border-color .15s ease,transform .15s ease,box-shadow .15s ease}
+.metric-filter-card:hover{transform:translateY(-2px);border-color:#4aa3ff}
+.metric-filter-card.selected{outline:2px solid #4aa3ff;box-shadow:0 0 0 4px rgba(74,163,255,.12),0 12px 28px rgba(0,0,0,.24)}
+.metric-filter-card.selected:after{content:'FILTERING';position:absolute;top:8px;right:10px;font-size:.62rem;font-weight:800;letter-spacing:.08em;color:#76baff}
+.metric-filter-banner{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 16px;padding:12px 16px;border:1px solid #245b8c;border-left:4px solid #4aa3ff;border-radius:10px;background:#0b2133;color:#dcecff}
+.metric-filter-banner button{border:1px solid #3d7fba;border-radius:8px;background:#123b5d;color:#fff;font-weight:700;padding:8px 12px;cursor:pointer}
+.metric-filter-banner button:hover{background:#18507d}
+.empty-filter-row{text-align:center!important;padding:28px!important;color:#9eb9cf!important;font-style:italic}
