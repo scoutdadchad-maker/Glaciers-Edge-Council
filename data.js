@@ -1,6 +1,6 @@
 const PUBLIC_DASHBOARD_DATA={
-  "schemaVersion": "12.5",
-  "generatedAt": "2026-09-01T15:55:38.844Z",
+  "schemaVersion": "12.9.1",
+  "generatedAt": "2026-09-02T11:41:52.582Z",
   "council": "Glacier's Edge Council",
   "summary": {
     "districts": 3,
@@ -10190,14 +10190,7 @@ const PUBLIC_DASHBOARD_DATA={
       "Unit_Type": "Pack",
       "Unit_Number": "3240",
       "Status": "Expires 31–60 Days",
-      "Count": 1
-    },
-    {
-      "District": "Driftless 08",
-      "Unit_Type": "Pack",
-      "Unit_Number": "3240",
-      "Status": "Expires 61–90 Days",
-      "Count": 1
+      "Count": 2
     },
     {
       "District": "Driftless 08",
@@ -10434,7 +10427,7 @@ const PUBLIC_DASHBOARD_DATA={
       "District": "Driftless 08",
       "Unit_Type": "Troop",
       "Unit_Number": "0081",
-      "Status": "Expires 61–90 Days",
+      "Status": "Expires 31–60 Days",
       "Count": 1
     },
     {
@@ -11064,7 +11057,7 @@ const PUBLIC_DASHBOARD_DATA={
       "District": "Northern Lights 07",
       "Unit_Type": "Pack",
       "Unit_Number": "3543",
-      "Status": "Expires ≤30 Days",
+      "Status": "Expired / Not Current",
       "Count": 1
     },
     {
@@ -11491,7 +11484,7 @@ const PUBLIC_DASHBOARD_DATA={
       "District": "Rock River 09",
       "Unit_Type": "Pack",
       "Unit_Number": "0239",
-      "Status": "Expires 61–90 Days",
+      "Status": "Expires 31–60 Days",
       "Count": 1
     },
     {
@@ -11631,7 +11624,7 @@ const PUBLIC_DASHBOARD_DATA={
       "District": "Rock River 09",
       "Unit_Type": "Pack",
       "Unit_Number": "3236",
-      "Status": "Expires 31–60 Days",
+      "Status": "Expires ≤30 Days",
       "Count": 1
     },
     {
@@ -11645,15 +11638,8 @@ const PUBLIC_DASHBOARD_DATA={
       "District": "Rock River 09",
       "Unit_Type": "Pack",
       "Unit_Number": "3405",
-      "Status": "Expires 61–90 Days",
-      "Count": 1
-    },
-    {
-      "District": "Rock River 09",
-      "Unit_Type": "Pack",
-      "Unit_Number": "3405",
       "Status": "Expires 31–60 Days",
-      "Count": 1
+      "Count": 2
     },
     {
       "District": "Rock River 09",

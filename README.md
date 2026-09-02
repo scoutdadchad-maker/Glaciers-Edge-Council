@@ -1,31 +1,29 @@
-# Glacier's Edge Council Command Center v12.3
+# Glacier's Edge Council Command Center v12.9.1
 
-Operations-dashboard redesign based on the approved dark command-center reference.
+Council-wide feature-parity build based on Northern Lights v12.8.
 
-## Overview redesign
-- Four prominent KPI cards
-- Unit Health by District scorecard with red/yellow/green counts and health-score rings
-- Five Unit Metrics progress bars
-- Dedicated Priority Indicators panel
-- Membership, Safeguarding Youth, and Charter Renewal donut/status panels
-- District navigation buttons plus District and Unit dropdown drill-down
-- Council → District → Unit scope continues to drive every dashboard
+## Scope
+- Entire Glacier's Edge Council
+- Driftless 08
+- Northern Lights 07
+- Rock River 09
+- Individual unit drill-down within each district
 
-## Data workflow
-Admin loads the five Scouting America CSV exports locally in the browser. Unit Metrics and Charter Renewal define active units. Generate `data.js` from Admin for a sanitized public Viewer.
+## Features
+- Dark command-center dashboard
+- Direct Council → District → Unit drill-down
+- Clickable KPI filters across Unit Metrics, Membership, Training, SYT, and Charter Renewal
+- Five Unit Metrics exception filters show only units not meeting the selected metric
+- Sortable columns across all unit tables; click a header to toggle ascending/descending
+- Data-aware sorting for numbers, dates, health, Yes/No, SYT status, and unit names
+- Priority Indicators and 360° Unit Profile
+- Unique registered-adult headline count deduplicated by Member ID in Admin and safely pre-aggregated for Viewer
+- Sanitized Viewer publishing with no names, Member IDs, emails, phones, addresses, or commissioner names
 
-Do not publish raw CSVs or the Admin folder to a public repository.
-
-
-## v12.4 — Direct dashboard drill-down
-Navigation is no longer limited to the left sidebar.
-- Click a district in Unit Health by District to scope the entire dashboard to that district.
-- Click any unit in the Overview or detail tables to scope directly to that unit.
-- Overview unit rows open the 360° Unit Profile.
-- Click top KPI cards, Five Unit Metrics rows, Priority Indicators, and status-panel links to open their detailed dashboard.
-- Keyboard Enter/Space is supported for clickable dashboard elements.
+## Publishing
+Open `admin/index.html`, load the five council reports, then generate Viewer `data.js`. Replace `viewer/data.js` with the generated file and publish only the `viewer` folder.
 
 
-## v12.5 Metric exception drill-down
+## v12.9.1 KPI + Sorting Fix
 
-On the Unit Metrics dashboard, each of the five metric cards is now clickable. Selecting a metric filters the unit table to only units **not meeting** that metric within the current Council/District/Unit scope. Click the selected metric again, or use **Show all units**, to clear the filter. The same exception filter is applied when drilling into a metric directly from the Overview performance bars.
+KPI filter cards now use persistent delegated click handling in both Admin and Viewer. This keeps KPI filtering active after table sorting, filtering, scope changes, and dashboard re-renders. Sortable headers, metric exception filters, direct unit drill-down, and Council → District → Unit scope behavior remain intact.
