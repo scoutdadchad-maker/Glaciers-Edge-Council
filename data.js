@@ -1,6 +1,6 @@
 const PUBLIC_DASHBOARD_DATA={
   "schemaVersion": "12.9.1",
-  "generatedAt": "2026-09-07T11:57:54.412Z",
+  "generatedAt": "2026-09-07T12:04:07.667Z",
   "council": "Glacier's Edge Council",
   "summary": {
     "districts": 3,
