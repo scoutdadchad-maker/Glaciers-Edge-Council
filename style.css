@@ -54,3 +54,23 @@ th.sortable-th:focus-visible{box-shadow:inset 0 0 0 2px var(--blue)}
 th.sortable-th.sort-asc::after{content:'▲';color:var(--blue);opacity:1}
 th.sortable-th.sort-desc::after{content:'▼';color:var(--blue);opacity:1}
 th.sortable-th[aria-sort="ascending"],th.sortable-th[aria-sort="descending"]{color:#fff;background:#13283d}
+
+.updated-date{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:2px;padding-left:16px}
+.updated-date span{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+.updated-date strong{font-size:12px;color:#dbeaf7;white-space:nowrap}
+@media(max-width:700px){.updated-date{align-items:flex-start;margin-left:0;padding-left:0}}
+
+.data-definition-note{margin:-2px 0 16px;padding:11px 14px;border:1px solid #29445d;border-left:3px solid #79c2ff;border-radius:9px;background:#091726;color:#aebfd0;font-size:11px;line-height:1.5}.data-definition-note strong{color:#dcebf8}.data-definition-note b{color:#f0f7fd}
+
+/* Membership overview accuracy fix */
+.membership-overview-snapshot{display:grid;gap:14px;padding-top:8px}
+.membership-headline-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.membership-headline{background:#0a1725;border:1px solid var(--line);border-radius:12px;padding:14px}
+.membership-headline span{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+.membership-headline strong{display:block;font-size:30px;line-height:1.05;margin:7px 0 4px;color:#e9f5ff}
+.membership-headline small{color:var(--muted);font-size:10px;line-height:1.35}
+.membership-record-strip{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.membership-record-strip>div{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#09131f;border:1px solid var(--line);border-radius:9px;padding:9px 10px}
+.membership-record-strip span{font-size:10px;color:var(--muted);line-height:1.25}.membership-record-strip b{font-size:15px;color:#dcebf7}
+.membership-accuracy-note{margin:0;color:var(--muted);font-size:10px;line-height:1.45;border-left:2px solid #3977a8;padding-left:9px}
+@media(max-width:650px){.membership-headline-grid,.membership-record-strip{grid-template-columns:1fr}}
